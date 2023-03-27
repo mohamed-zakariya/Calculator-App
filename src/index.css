@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.dark-mode{
+  background-color: black;
+
+}
+.light-mode{
+  background-color: white;
+ 
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.mode{
+  width: 220px;
+  margin: auto;
+  
+}
+.mode > h3{
+  text-indent: 15px;
+}
+.mode > button{
+  padding: 15px;
+  margin: 5px;
+  border-radius: 100px;
+}
+.mode > button:hover{
+  background-color: #6791bd;
+}
+/* .label-style{
+  width: 500px;
+  height: 200px;
+  position: relative;
+  display: block;
+  background-color: #ebebeb;
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.label-style:after{
+  content: "";
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(180deg, #ffcc89, #d8860d);
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.input-style{
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+.input-style:checked + .label-style {
+  background-color: #242424;
+}
+.input-style:checked + .label-style:after {
+  left: 490px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+.label-style:active:after{
+  width: 260px;
+}
+.background{
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  z-index: -2; 
+  position: absolute;
+  left: 500px;
+  transition: 0.3s;
+}
+.input-style:checked + .label-style + .background{
+  background: #242424;
+} */
+.darkmode-toggle{
+
+}
