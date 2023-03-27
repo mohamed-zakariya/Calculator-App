@@ -1,7 +1,7 @@
-!["Dark Mode"](/calculator/Photos/DarkMode.jpeg)
+!["Dark Mode"](https://github.com/mohamed-zakariya/Calculator-App/blob/mohamed-zakariya/Main/Calc-photos/DarkMode.jpeg)
 ## Dark Mode Display
 
-!["Light Mode](/calculator/Photos/LightMode.jpeg)
+!["Light Mode](https://github.com/mohamed-zakariya/Calculator-App/blob/mohamed-zakariya/Main/Calc-photos/LightMode.jpeg)
 ## Light Mode Display
 
 <br>
