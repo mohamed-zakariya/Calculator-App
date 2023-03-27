@@ -203,7 +203,7 @@ sup{
   /* transform: translateX(-100%); */
 }
 .dark-mode{
-  color: #242424;
+  color: black;
   display: contents;
   position: absolute;
   left: 15px;
