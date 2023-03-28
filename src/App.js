@@ -2,24 +2,26 @@ import './App.css';
 import{useState,useRef} from 'react';
 import Numbers from './Numbers';
 import Operations from './Operations';
-import ModeChange from './ModeChange';
-function App() {
+
+  function App() {
   const [result, setResult] = useState(0);
   const [number, setNumber] = useState("");
-  const [mode, setMode] = useState("false");
+  const [mode, setMode] = useState(false);
 
   const inputRef = useRef(null);
   const resultRef = useRef(null);
   const buttonRef = useRef(null); 
   
 
-  
+  const handleChange = (event) =>{
+    (event.target.checked)? setMode(true):setMode(false);
+  }
  
   return (
     <div className="App">
-      <div id = "calc" className='calculator-light'>
-          <h1 id = "calc-type" className='calc-type-light'>Calculator</h1>
-          <p id ="show-result" className="Show-Result-light" ref={resultRef}>
+      <div id = "calc" className={(mode)?'calculator-dark':'calculator-light'}>
+          <h1 id = "calc-type" className={(mode)?'calc-type-dark':'calc-type-light'}>Calculator</h1>
+          <p id ="show-result" className={(mode)?"Show-Result-dark":'Show-Result-light'} ref={resultRef}>
               {result}
             </p>
             <input 
@@ -27,10 +29,10 @@ function App() {
             ref={inputRef}
             type='string'
             placeholder='type a number'
-            className='Desgin-input-light'
+            className={(mode)?'Desgin-input-dark':'Desgin-input-light'}
             >
             </input>
-          <form id='Desgin-form' className='Desgin-form-light'>
+          <form  className={(mode)?'Desgin-form-dark' :'Desgin-form-light' }>
             {/* Clear */}
             <Operations  input={inputRef} setNumber = {setNumber} result = {result} setResult ={setResult} operation="C" sign ="CE"/>
 
@@ -78,11 +80,11 @@ function App() {
           <div className='Mode'>
           <span className='light-mode'>Light Mode</span>
           <span className='dark-mode'>Dark Mode</span>
-          {/* <input type="checkbox"  className='input-style' onChange={handleChange} id="subscribe" name='subscribe'/> */}
-          <ModeChange mode = {mode} setMode = {setMode} />
-          {/* <label for="subscribe" className='label-style' ></label> */}
-          <div className='background' ></div>
           
+          <input type="checkbox"  className='input-style' onChange={handleChange} id="subscribe" name='subscribe'/>
+          <label for="subscribe" className='label-style' ></label>
+
+          <div className='background' ></div>
           </div>
       </div>
         
